@@ -1,0 +1,300 @@
+/*Настя*/
+.main-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 110px repeat(4, 1fr);
+  border: 1px solid black;
+  grid-template-areas:
+    "header"
+    "main"
+    "services"
+    "about-company"
+    "amount";
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__logo {
+  width: 3%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.nav__item {
+  color: #c3b9b5;
+  text-decoration: none;
+  font-family: "Futura";
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.header__geo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 8%;
+  color: #ffc59e;
+  font-family: "Futura";
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.header__geo-img {
+  width: 14%;
+}
+
+.main {
+  grid-area: main;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left__img {
+  position: absolute;
+  width: 25px;
+  left: 6.8%;
+  top: 18.7%;
+}
+
+.left__number {
+  padding: 12px;
+  font-family: "Futura";
+  font-size: smaller;
+  font-weight: bold;
+  color: #c3b9b5;
+}
+
+.left__number_one {
+  color: #080606;
+  margin-top: 10%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info__title {
+  font-family: "SchoolBook";
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.button {
+  background-color: #ffc59e;
+  width: 25%;
+  height: 20%;
+  border: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.button__schedule {
+  color: #ffffff;
+  font-family: "Futura";
+  font-weight: bolder;
+  font-size: 1.25em;
+}
+
+.info__paw {
+  width: 3.4%;
+  position: absolute;
+  top: 75.5%;
+  left: 18%;
+  z-index: -1;
+}
+
+.info__social {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  padding-bottom: 15px;
+}
+
+.info__social-img {
+  width: 15%;
+  cursor: pointer;
+}
+
+.cat-dog {
+  width: 87%;
+}
+
+.phone {
+  position: absolute;
+  color: #59443f;
+  font-family: "Futura";
+  font-weight: bold;
+  right: 10%;
+  top: 75%;
+}
+
+.services {
+  grid-area: services;
+  border: 1px solid black;
+}
+
+.about-company {
+  grid-area: about-company;
+  border: 1px solid black;
+}
+
+.amount {
+  grid-area: amount;
+  border: 1px solid black;
+}
+
+/* Маша */
+.section {
+  height: 1121px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.section__title {
+  text-align: center;
+  font-family: "SchoolBook", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+.section__info-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.advantage__title {
+  font-family: "SchoolBook", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.advantage__info-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantage__image {
+  width: 70px;
+  height: 60px;
+  margin-right: 20px;
+  align-content: center;
+}
+
+.advantage__text {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.section_orange {
+  background-color: #ffc59e;
+  height: 1100px;
+}
+
+.section__mobile-app {
+  display: flex;
+  flex-direction: column;
+  width: 850px;
+  margin-left: 140px;
+}
+
+.section__text {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: #ffff;
+  margin-top: 200px;
+}
+
+.section__heading {
+  font-family: "SchoolBook", Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  color: #ffff;
+}
+
+.section__icon-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.section__mobile-icon1 {
+  height: 48px;
+  width: 167px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.section__mobile-icon2 {
+  height: 68px;
+  width: 190px;
+}
+
+.section__pic1 {
+  position: absolute;
+  margin-left: 825px;
+  margin-top: 380px;
+  z-index: 1;
+}
+
+.section__pic2 {
+  position: absolute;
+  margin-left: 1120px;
+  margin-top: 230px;
+  z-index: 2;
+}
+
+/*Катя*/
+.wrapper-therapy {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 10% 1fr 3fr 6fr 10fr 6fr 8fr 15%;
+  height: 100vh;
+  width: 80vw;
+}
+
+.pagination {
+  color: #ffc59e;
+}
+
+.record-section {
+  display: flex;
+}
+
+.record-card {
+  border-radius: 35px;
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.4);
+}
+
+.record-card__circle {
+  border-radius: 50%;
+  background-color: #c3b9b5;
+  width: 15%;
+}
