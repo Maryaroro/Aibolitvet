@@ -287,26 +287,33 @@
 .wrapper-therapy {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 10% 1fr 3fr 6fr 10fr 6fr 8fr 15%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "left rightgit";
     height: 100vh;
     width: 80vw;
+  }
+  .col-1{
+    grid-area: left;
+  }
+.col-2{
+    grid-area: right;
 }
-
-.pagination {
+  .pagination {
     color: #ffc59e;
-}
-
-.record-section {
+    grid-area: pagination;
+  }
+  .table-of-contents{
+    grid-area: table-of-contents;
+  }
+  .record-section {
     display: flex;
-}
-
-.record-card {
+  }
+  .record-card {
     border-radius: 35px;
     box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.4);
-}
-
-.record-card__circle {
+  }
+  .record-card__circle {
     border-radius: 50%;
     background-color: #c3b9b5;
-    width: 15%;
-}
+    width: 15%;}
