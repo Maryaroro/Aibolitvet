@@ -510,42 +510,90 @@ a {
 /* < !-- Катя-- !> */
 
 .wrapper-therapy {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "left rightgit";
-  height: 100vh;
-  width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "left right";
+    height: 100vh;
+    width: 80vw;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .wrapper-therapy__col-1{
+    grid-area: left;
+    width: 35%;
+  }
+.wrapper-therapy__col-2{
+    grid-area: right;
+    width: 65%;
 }
-
-.col-1 {
-  grid-area: left;
+  .pagination {
+    color: #FFC59E;
+    grid-area: pagination;
+    font-family: "Futura";
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .wrapper-therapy__col-1__heading{
+    font-family: SchoolBook;
+    font-size: 80px;
+  }
+.wrapper-therapy__col-1__item{
+    font-family: Futura;
+    font-size: 20px;
+    color: #C3B9B5;
 }
-
-.col-2 {
-  grid-area: right;
-}
-
-.pagination {
-  color: #ffc59e;
-  grid-area: pagination;
-}
-
-.table-of-contents {
-  grid-area: table-of-contents;
-}
-
-.record-section {
-  display: flex;
-}
-
-.record-card {
-  border-radius: 35px;
-  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.4);
-}
-
-.record-card__circle {
-  border-radius: 50%;
-  background-color: #c3b9b5;
-  width: 15%;
-}
+  .record-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "heading heading heading "
+    "card1 card2 card3";
+    gap: 15px;
+    height: 25vh;
+    margin-bottom: 10vh;
+  }
+  .record-section__heading{
+    grid-area: heading;
+  }
+  .record-section__card{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas:
+    "circl name"
+    "circl topic"
+    "circl data";
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.4);
+    width: 344px;
+    height: 150px;
+  }
+  .record-section__card1{
+    grid-area: card1;
+  }
+  .record-section__card2{
+    grid-area: card2;
+  }
+  .record-section__card3{
+    grid-area: card3;
+  }
+  .record-section__card__circle {
+    border-radius: 50%;
+    background-color: #C3B9B5;
+    width: 50px;
+    height: 50px;
+    grid-area: circl;}
+    .record-section__card__name{
+grid-area: name;
+font-family: "Futura";
+font-weight: bold;
+font-size: 24px;
+    }
+    .record-section__card__topic{
+grid-area: topic;
+    }
+    .record-section__card__data{
+grid-area: data;
+    }
