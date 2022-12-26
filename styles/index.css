@@ -2,9 +2,7 @@
 
 .main-page {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 110px repeat(4, 1fr);
-    border: 1px solid black;
+    grid-template-rows: 110px;
     grid-template-areas:
         "header"
         "main"
@@ -18,6 +16,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
 }
 
 .header__logo {
@@ -70,8 +71,8 @@
 .left__img {
     position: absolute;
     width: 25px;
-    left: 6.8%;
-    top: 18.7%;
+    left: 6.7%;
+    top: 18.5%;
 }
 
 .left__number {
@@ -105,6 +106,7 @@
     width: 25%;
     height: 20%;
     border: 0;
+    border-radius: 1.2em;
     cursor: pointer;
     -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
@@ -153,7 +155,124 @@
 
 .services {
     grid-area: services;
-    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);
+    grid-gap: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    border-radius: 1.5em;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    grid-template-areas:
+        "card-title card-img"
+        "card-subtitle card-img";
+}
+
+.card__title {
+    display: flex;
+    align-items: flex-start;
+    font-family: "SchoolBook";
+    font-size: xx-large;
+    color: #59443f;
+    padding: 20px;
+    grid-area: card-title;
+}
+
+.card__subtitle {
+    display: flex;
+    align-items: flex-end;
+    font-family: "Futura";
+    color: #59443f;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    grid-area: card-subtitle;
+}
+
+.card__img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    padding: 15px;
+    grid-area: card-img;
+}
+
+.card__animal {
+    width: 80%;
+    height: 55%;
+}
+
+.card__animal_nevr {
+    width: 99%;
+}
+
+/* для репродуктологии, офтальмологии и эндокринологии изменила сетку гридов, но из-за одинакового положения ячейки назвала одинаково - с модиком oft, потому что первым делала офтальмологию */
+.card_oft,
+.card_rep,
+.card_endo {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-template-areas:
+        "title-oft title-oft"
+        "subtitle-oft img-oft";
+}
+
+.card__title_oft,
+.card__title_rep,
+.card__title_endo {
+    grid-area: title-oft;
+}
+
+.card__subtitle_oft,
+.card__subtitle_rep,
+.card__subtitle_endo {
+    grid-area: subtitle-oft;
+}
+
+.card__img_oft,
+.card__img_rep,
+.card__img_endo {
+    grid-area: img-oft;
+}
+
+.card__animal_oft {
+    height: 110%;
+}
+
+.card__animal_cardio {
+    width: 180%;
+}
+
+.card__animal_teeth {
+    width: 180%;
+}
+
+.card__animal_rep {
+    width: 100%;
+    height: 100%;
+}
+
+.card__animal_smth {
+    width: 100%;
+}
+
+.card__animal_lab {
+    width: 150%;
+}
+
+.card__animal_endo {
+    height: 100%;
+    width: 100%;
 }
 
 .about-company {
@@ -288,32 +407,40 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
-    grid-template-areas: 
-    "left rightgit";
+    grid-template-areas:
+        "left rightgit";
     height: 100vh;
     width: 80vw;
-  }
-  .col-1{
+}
+
+.col-1 {
     grid-area: left;
-  }
-.col-2{
+}
+
+.col-2 {
     grid-area: right;
 }
-  .pagination {
+
+.pagination {
     color: #ffc59e;
     grid-area: pagination;
-  }
-  .table-of-contents{
+}
+
+.table-of-contents {
     grid-area: table-of-contents;
-  }
-  .record-section {
+}
+
+.record-section {
     display: flex;
-  }
-  .record-card {
+}
+
+.record-card {
     border-radius: 35px;
     box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.4);
-  }
-  .record-card__circle {
+}
+
+.record-card__circle {
     border-radius: 50%;
     background-color: #c3b9b5;
-    width: 15%;}
+    width: 15%;
+}
