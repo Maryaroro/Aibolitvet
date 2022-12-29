@@ -286,12 +286,12 @@
 
 @font-face {
   font-family: Futura;
-  src: url(/FuturaNewBook-Reg.ttf);
+  src: url(../FuturaNewBook-Reg.ttf);
 }
 
 @font-face {
   font-family: SchoolBook;
-  src: url(/SchoolBook.ttf);
+  src: url(../SchoolBook.ttf);
 }
 
 /* < !-- Маша-- !> */
@@ -530,11 +530,11 @@ ul {
   }
 
 .wrapper-therapy__col-1__heading{
-    font-family: SchoolBook;
+    font-family: "SchoolBook";
     font-size: 80px;
   }
 .wrapper-therapy__col-1__item{
-    font-family: Futura;
+    font-family: "Futura";
     font-size: 20px;
     color: #C3B9B5;
     width: 400px;
