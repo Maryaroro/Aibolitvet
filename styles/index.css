@@ -1,6 +1,7 @@
 /* < !-- Настя-- !> */
 
 .main-page {
+  width: 100vw;
   display: grid;
   grid-template-rows: 110px;
   grid-template-areas:
@@ -70,8 +71,8 @@
 .left__img {
   position: absolute;
   width: 25px;
-  left: 6.7%;
-  top: 18.5%;
+  left: 7.4%;
+  top: 19.4%;
 }
 
 .left__number {
@@ -100,7 +101,7 @@
   font-weight: lighter;
 }
 
-.button {
+.button-shedule {
   background-color: #ffc59e;
   width: 25%;
   height: 20%;
@@ -110,9 +111,6 @@
   -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-}
-
-.button__schedule {
   color: #ffffff;
   font-family: "Futura";
   font-weight: bolder;
@@ -122,8 +120,8 @@
 .info__paw {
   width: 3.4%;
   position: absolute;
-  top: 75.5%;
-  left: 18%;
+  top: 78.7%;
+  left: 19.9%;
   z-index: -1;
 }
 
@@ -132,6 +130,7 @@
   justify-content: space-between;
   width: 30%;
   padding-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .info__social-img {
@@ -148,8 +147,8 @@
   color: #59443f;
   font-family: "Futura";
   font-weight: bold;
-  right: 10%;
-  top: 75%;
+  right: 1%;
+  top: 83%;
 }
 
 .services {
@@ -160,7 +159,7 @@
   grid-gap: 10px;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 5%;
+  margin-top: 150px;
   margin-bottom: 5%;
 }
 
@@ -207,8 +206,7 @@
 }
 
 .card__animal {
-  width: 80%;
-  height: 55%;
+  width: 90px;
 }
 
 .card__animal_nevr {
@@ -249,16 +247,15 @@
 }
 
 .card__animal_cardio {
-  width: 180%;
+  width: 100%;
 }
 
 .card__animal_teeth {
-  width: 180%;
+  width: 100%;
 }
 
 .card__animal_rep {
   width: 100%;
-  height: 100%;
 }
 
 .card__animal_smth {
@@ -266,7 +263,7 @@
 }
 
 .card__animal_lab {
-  width: 150%;
+  width: 100%;
 }
 
 .card__animal_endo {
@@ -276,22 +273,124 @@
 
 .about-company {
   grid-area: about-company;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 300px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 268px;
+  margin-bottom: 100px;
+}
+
+.history__text {
+  font-family: "Futura";
+  font-size: 1.25em;
+  color: #59443f;
+  width: 479px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-company-button {
+  font-family: "Futura";
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #ffc59e;
+  width: 155px;
+  height: 24px;
+  display: flex;
+  border: 0;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.about-company-button_spec {
+  width: 200px;
+}
+
+.about-company-button__img {
+  width: 10px;
+}
+
+.specialists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 302px;
+  margin-bottom: 206px;
+}
+
+.mini-title {
+  font-family: "SchoolBook";
+  font-size: 2em;
+  color: #080606;
+}
+
+.specialists-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specialists-images__img {
+  width: 140px;
+}
+
+.specialists-images__img_arrow {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
 }
 
 .amount {
   grid-area: amount;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 510px;
+  margin-bottom: 200px;
+}
+
+.counter {
+  font-family: "SchoolBook";
+  font-size: 144px;
+  font-weight: bold;
+  color: #59443f;
+  width: 687px;
+}
+
+.amount__text {
+  font-family: "Futura";
+  font-size: 80px;
+  width: 716px;
+}
+
+.amount__bird {
+  position: absolute;
+  top: 3247px;
+  right: 26.5%;
+  width: 200px;
 }
 
 @font-face {
   font-family: Futura;
-  src: url(/FuturaNewBook-Reg.ttf);
+  src: url(../FuturaNewBook-Reg.ttf);
 }
 
 @font-face {
   font-family: SchoolBook;
-  src: url(/SchoolBook.ttf);
+  src: url(../SchoolBook.ttf);
 }
 
 /* < !-- Маша-- !> */
@@ -528,44 +627,284 @@ a:hover {
 }
 
 /* < !-- Катя-- !> */
-
+ul {
+  padding-left: 0;
+}
 .wrapper-therapy {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "left rightgit";
-  height: 100vh;
+  grid-template-areas: "left right";
   width: 80vw;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 5%;
+  grid-column-gap: 5%;
 }
-
-.col-1 {
+.wrapper-therapy__col-1 {
   grid-area: left;
+  width: 35%;
+  padding-top: 10%;
 }
 
-.col-2 {
+.wrapper-therapy__col-1__heading {
+  font-family: "SchoolBook";
+  font-size: 80px;
+}
+.wrapper-therapy__col-1__item {
+  font-family: "Futura";
+  font-size: 20px;
+  color: #c3b9b5;
+  width: 400px;
+  margin-top: 20%;
+}
+
+.wrapper-therapy__col-2 {
   grid-area: right;
+  width: 80%;
 }
 
+.wrapper-therapy__col-2__back {
+  margin-bottom: 5%;
+}
 .pagination {
   color: #ffc59e;
   grid-area: pagination;
-}
-
-.table-of-contents {
-  grid-area: table-of-contents;
+  font-family: "Futura";
+  font-size: 30px;
+  text-decoration: none;
 }
 
 .record-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "heading heading heading "
+    "card1 card2 card3";
+  gap: 15px;
+  height: 25vh;
+  margin-bottom: 10vh;
 }
-
-.record-card {
-  border-radius: 35px;
-  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.4);
+.record-section__heading {
+  grid-area: heading;
+  font-family: "SchoolBook";
+  font-size: 30px;
+  font-style: normal;
 }
-
-.record-card__circle {
+.record-section__card {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "circl name"
+    "circl topic"
+    "circl data";
+  border-radius: 15px;
+  box-shadow: 4px 4px 22px -2px rgba(34, 60, 80, 0.2);
+  width: 21em;
+  height: 150px;
+  padding: 20px;
+}
+.record-section__card1 {
+  grid-area: card1;
+}
+.record-section__card2 {
+  grid-area: card2;
+}
+.record-section__card3 {
+  grid-area: card3;
+}
+.record-section__card__circle {
   border-radius: 50%;
   background-color: #c3b9b5;
-  width: 15%;
+  width: 50px;
+  height: 50px;
+  grid-area: circl;
+}
+.record-section__card__name {
+  grid-area: name;
+  font-family: "Futura";
+  font-weight: bold;
+  font-size: 24px;
+}
+.record-section__card__topic {
+  grid-area: topic;
+  font-family: "Futura";
+  font-size: 20px;
+  color: #c3b9b5;
+  margin-bottom: 5%;
+}
+.record-section__card__data {
+  grid-area: data;
+  font-family: "Futura";
+  font-size: 20px;
+  color: #c3b9b5;
+}
+
+.about-therapy__heading {
+  font-family: "SchoolBook";
+  font-size: 30px;
+}
+.about-therapy__Paragraph1,
+.about-therapy__Paragraph2 {
+  margin-top: 5vh;
+  font-family: "Futura";
+  font-size: 20px;
+  color: #59443f;
+}
+.about-therapy__item {
+  font-family: "Futura";
+  font-size: 20px;
+  color: #59443f;
+  list-style-type: none;
+}
+
+.subtitle-1__heading {
+  font-family: "SchoolBook";
+  font-size: 30px;
+  margin-top: 10vh;
+}
+.subtitle-1__Paragraph1,
+.subtitle-1__Paragraph2,
+.subtitle-1__Paragraph3,
+.subtitle-1__Paragraph4 {
+  font-family: "Futura";
+  font-size: 20px;
+  color: #59443f;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+.subtitle-1__img {
+  margin-bottom: 5vh;
+}
+
+.subtitle-1__item {
+  list-style-type: none;
+  font-family: "Futura";
+  font-size: 20px;
+  color: #59443f;
+}
+.subtitle-2__heading {
+  font-family: "SchoolBook";
+  font-size: 30px;
+  margin-top: 10vh;
+}
+.subtitle-2__Paragraph1,
+.subtitle-2__Paragraph2,
+.subtitle-2__Paragraph3,
+.subtitle-2__Paragraph4 {
+  font-family: "Futura";
+  font-size: 20px;
+  color: #59443f;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+.prices__heading {
+  font-family: "SchoolBook";
+  font-size: 30px;
+  margin-top: 10vh;
+}
+.prices__number,
+.prices__items {
+  font-family: "Futura";
+  font-size: 20px;
+  color: #59443f;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+.prices__number {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
+}
+.prices__items__item {
+  padding-left: 5%;
+  vertical-align: middle;
+  line-height: 48px;
+}
+#prices__item1,
+#prices__item2,
+#prices__item3,
+#prices__item4,
+#prices__item5,
+#prices__item6 {
+  background: #f3efee;
+  border-radius: 15px;
+  height: 48px;
+}
+.prices__number2 {
+  display: flex;
+  justify-content: end;
+  font-family: "Futura";
+  font-size: 20px;
+  color: #59443f;
+  margin-top: 5vh;
+}
+.prices__number_lite {
+  color: #ede9e8;
+}
+
+.wrapper-servieces {
+  background: #ede9e8;
+}
+.ther-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "services__heading services__heading services__heading services__heading"
+    "services__card1 services__card2 services__card3 services__card4";
+  padding-left: 8%;
+  padding-bottom: 6%;
+  padding-right: 15%;
+}
+.ther-services__heading {
+  grid-area: services__heading;
+  font-family: "SchoolBook";
+  font-size: 30px;
+  align-self: center;
+}
+.ther-services__card {
+  background-color: white;
+  border-radius: 15px;
+  width: 18em;
+  padding: 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "ther-services__card__heading ther-services__card__img"
+    "ther-services__card__item ther-services__card__img";
+}
+.ther-services__card1 {
+  grid-area: services__card1;
+}
+.ther-services__card2 {
+  grid-area: services__card2;
+}
+.ther-services__card3 {
+  grid-area: services__card3;
+}
+.ther-services__card4 {
+  grid-area: services__card4;
+}
+.ther-services__card__heading {
+  font-family: "SchoolBook";
+  font-size: 30px;
+  color: #59443f;
+  grid-area: ther-services__card__heading;
+}
+.ther-services__card__item {
+  font-family: "Futura";
+  font-size: 20px;
+  color: #59443f;
+  grid-area: ther-services__card__item;
+  margin-top: 50%;
+}
+.ther-services__card__img {
+  grid-area: ther-services__card__img;
+  margin-top: 55%;
+  margin-left: 25%;
 }
