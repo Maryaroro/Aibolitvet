@@ -629,108 +629,272 @@ a {
 }
 
 /* < !-- Катя-- !> */
-
+ul {
+    padding-left: 0;
+  }
 .wrapper-therapy {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   grid-template-areas:
     "left right";
-  height: 100vh;
-  width: 80vw;
-  margin-left: 10%;
-  margin-right: 10%;
+    width: 80vw;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 5%;
+    grid-column-gap: 5%;
+  }
+  .wrapper-therapy__col-1{
+    grid-area: left;
+    width: 35%;
+    padding-top: 10%;
+  }
+
+.wrapper-therapy__col-1__heading{
+    font-family: "SchoolBook";
+    font-size: 80px;
+  }
+.wrapper-therapy__col-1__item{
+    font-family: "Futura";
+    font-size: 20px;
+    color: #C3B9B5;
+    width: 400px;
+    margin-top: 20%;
 }
 
-.wrapper-therapy__col-1 {
-  grid-area: left;
-  width: 35%;
-}
+    .wrapper-therapy__col-2{
+        grid-area: right;
+        width: 80%;
+    }
 
-.wrapper-therapy__col-2 {
-  grid-area: right;
-  width: 65%;
+.wrapper-therapy__col-2__back{
+    margin-bottom: 5%;
 }
+  .pagination {
+    color: #FFC59E;
+    grid-area: pagination;
+    font-family: "Futura";
+    font-size: 30px;
+    text-decoration: none;
+  }
 
-.pagination {
-  color: #FFC59E;
-  grid-area: pagination;
-  font-family: "Futura";
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.wrapper-therapy__col-1__heading {
-  font-family: SchoolBook;
-  font-size: 80px;
-}
-
-.wrapper-therapy__col-1__item {
-  font-family: Futura;
-  font-size: 20px;
-  color: #C3B9B5;
-}
-
-.record-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "heading heading heading "
+    .record-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "heading heading heading "
     "card1 card2 card3";
-  gap: 15px;
-  height: 25vh;
-  margin-bottom: 10vh;
-}
-
-.record-section__heading {
-  grid-area: heading;
-}
-
-.record-section__card {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 2fr 1fr 1fr;
-  grid-template-areas:
+    gap: 15px;
+    height: 25vh;
+    margin-bottom: 10vh;
+  }
+  .record-section__heading{
+    grid-area: heading;
+    font-family: "SchoolBook";
+    font-size: 30px;
+    font-style: normal;
+  }
+  .record-section__card{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
     "circl name"
     "circl topic"
     "circl data";
-  border-radius: 15px;
-  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.4);
-  width: 344px;
-  height: 150px;
-}
+    border-radius: 15px;
+    box-shadow: 4px 4px 22px -2px rgba(34, 60, 80, 0.2);
+    width: 21em;
+    height: 150px;
+    padding: 20px;
+  }
+  .record-section__card1{
+    grid-area: card1;
+  }
+  .record-section__card2{
+    grid-area: card2;
+  }
+  .record-section__card3{
+    grid-area: card3;
+  }
+  .record-section__card__circle {
+    border-radius: 50%;
+    background-color: #C3B9B5;
+    width: 50px;
+    height: 50px;
+    grid-area: circl;}
+    .record-section__card__name{
+    grid-area: name;
+    font-family: "Futura";
+    font-weight: bold;
+    font-size: 24px;
+    }
+    .record-section__card__topic{
+grid-area: topic;
+font-family: "Futura";
+font-size: 20px;
+color: #C3B9B5;
+margin-bottom: 5%;
+    }
+    .record-section__card__data{
+grid-area: data;
+font-family: "Futura";
+font-size: 20px;
+color: #C3B9B5;
+    }
 
-.record-section__card1 {
-  grid-area: card1;
-}
+    .about-therapy__heading{
+        font-family: "SchoolBook";
+        font-size: 30px;
+    }
+    .about-therapy__Paragraph1, .about-therapy__Paragraph2{
+    margin-top: 5vh;
+    font-family: "Futura";
+    font-size: 20px;
+    color: #59443F;
+    }
+    .about-therapy__item{
+        font-family: "Futura";
+    font-size: 20px;
+    color: #59443F;
+    list-style-type: none;
+    }
 
-.record-section__card2 {
-  grid-area: card2;
-}
+    .subtitle-1__heading{
+        font-family: "SchoolBook"; 
+        font-size: 30px;
+        margin-top: 10vh;
+    }
+    .subtitle-1__Paragraph1, .subtitle-1__Paragraph2, .subtitle-1__Paragraph3, .subtitle-1__Paragraph4{
+        font-family: "Futura";
+        font-size: 20px;
+        color: #59443F;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+    .subtitle-1__img{
+        margin-bottom: 5vh;
+    }
 
-.record-section__card3 {
-  grid-area: card3;
-}
+    .subtitle-1__item{
+        list-style-type: none;
+        font-family: "Futura";
+        font-size: 20px;
+        color: #59443F;
+    }
+    .subtitle-2__heading{
+        font-family: "SchoolBook"; 
+        font-size: 30px;
+        margin-top: 10vh;
+    }
+    .subtitle-2__Paragraph1, .subtitle-2__Paragraph2, .subtitle-2__Paragraph3, .subtitle-2__Paragraph4{
+        font-family: "Futura";
+        font-size: 20px;
+        color: #59443F;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
 
-.record-section__card__circle {
-  border-radius: 50%;
-  background-color: #C3B9B5;
-  width: 50px;
-  height: 50px;
-  grid-area: circl;
-}
+    .prices__heading{
+        font-family: "SchoolBook"; 
+        font-size: 30px;
+        margin-top: 10vh;
+    }
+    .prices__number, .prices__items{
+        font-family: "Futura";
+        font-size: 20px;
+        color: #59443F;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        
+    }
+    .prices__number{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10vh;
+    }
+     .prices__items__item{
+        padding-left: 5%;
+        vertical-align: middle;
+        line-height: 48px;
+    }
+    #prices__item1, #prices__item2, #prices__item3, #prices__item4, #prices__item5, #prices__item6{
+        background: #f3efee;
+        border-radius: 15px;
+        height: 48px;
+    }
+    .prices__number2{
+        display: flex;
+        justify-content: end;
+        font-family: "Futura";
+        font-size: 20px;
+        color: #59443F;
+        margin-top: 5vh;
+        }
+        .prices__number_lite{
+            color: #EDE9E8;
+        }
 
-.record-section__card__name {
-  grid-area: name;
-  font-family: "Futura";
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.record-section__card__topic {
-  grid-area: topic;
-}
-
-.record-section__card__data {
-  grid-area: data;
-}
+        .wrapper-servieces{
+            background: #EDE9E8;
+        }
+        .ther-services{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "services__heading services__heading services__heading services__heading"
+            "services__card1 services__card2 services__card3 services__card4";
+            padding-left: 8%;
+            padding-bottom: 6%;
+            padding-right: 15%;
+             }
+        .ther-services__heading{
+        grid-area: services__heading;
+        font-family: "SchoolBook";
+        font-size: 30px;
+        align-self: center;
+        }
+        .ther-services__card{
+            background-color: white;
+            border-radius: 15px;  
+            width: 18em;
+            padding: 6%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "ther-services__card__heading ther-services__card__img"
+            "ther-services__card__item ther-services__card__img";
+            
+        }
+    .ther-services__card1{
+        grid-area: services__card1;
+    }
+    .ther-services__card2{
+        grid-area: services__card2;
+    }
+    .ther-services__card3{
+    grid-area: services__card3;
+    }
+    .ther-services__card4{
+        grid-area: services__card4;
+    }
+    .ther-services__card__heading{
+        font-family: "SchoolBook";
+        font-size: 30px;
+        color: #59443F;
+        grid-area: ther-services__card__heading;
+    }
+    .ther-services__card__item{
+        font-family: "Futura";
+        font-size: 20px;
+        color: #59443F; 
+        grid-area: ther-services__card__item;
+        margin-top: 50%;
+    }
+    .ther-services__card__img{
+        grid-area: ther-services__card__img;
+        margin-top: 55%;
+        margin-left: 25%;
+    }
