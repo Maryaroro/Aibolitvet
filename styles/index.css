@@ -697,7 +697,7 @@ color: #C3B9B5;
         vertical-align: middle;
         line-height: 48px;
     }
-    #prices__item{
+    #prices__item1, #prices__item2, #prices__item3, #prices__item4, #prices__item5, #prices__item6{
         background: #f3efee;
         border-radius: 15px;
         height: 48px;
